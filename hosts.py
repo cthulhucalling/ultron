@@ -1,0 +1,3 @@
+hosts=[ "somehost",
+        "another host"
+]
