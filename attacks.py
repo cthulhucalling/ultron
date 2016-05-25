@@ -1,0 +1,30 @@
+requestattacks=[["/etc/passwd access attempt","passwd",3],
+        ["SQL Injection","/(select|insert|delete|union|varchar|declare|drop|benchmark|concat)/ AND -request:box",10],
+        ["Login page access","login",3],
+        ["Wordpress login page access","wp-login.php",3],
+        ["Wordpress Search and Replace access","searchreplacedb2",5],
+        ["phpMyAdmin access attempt","phpmyadmin",3],
+        ["General bad stuff","/(base64|eval|localhost|loopback|debug|phpinfo|petx|yena)/",4],
+        ["WP Config access attempt","wp AND config",4],
+        ["WordPress Revslider attack","revslider",3],
+        ["WP MailPoet theme file upload attempt","wysija_campaigns",4],
+        ["Scanners","/(w00tw00t|thisdoesnotexist|sumthin)/",2],
+        ["JBoss JMX Console Access attempt","jmx-console",3],
+        ["SQLite Management console access attempt","/(sqlite|SQLiteManager)/",4],
+        ["Cold Fusion Admin access attempt","CFIDE",4],
+        ["Special file access","/(system.ini|boot.ini|passwd|shadow)/",5],
+        ["Shell access attempt","/(shell|cmd|bash|tsh|csh|ksh)/",5],
+        ["Wordpress bruteforce","xmlrpc.php",4],
+        ["Chinese error","error",2],
+        ["Protected Directory Access Attempt","/(system32|etc)/",4],
+        ["SQL Server Extended//Stored Procedures","/(sp_start_job|sp_password|sp_delete|sp_adduser|xp_cmdshell|xp_servicecontrol|xp_regread|xpregdeletevalue|xp_regdeletekey|xp_fileexist|xp_enumerrorlogs|xp_readerrorlogs|xp_enumdsn|xp_enumgroups|xp_ntsec_enumdomains)/",9]
+]
+
+uaattacks=[["Shellshock","/(bash|echo|tcp|udp|rm|tmp)/",5],
+        ["Morfeus Scanner","/(morfeus|fucking scanner)/",2],
+        ["Base_64 Decode User Agent","base64_decode",2],
+        ["Recon-ng User-Agent","Recon",2],
+        ["WPScanner","WPScan",4],
+        ["SQLMap","sqlmap",5],
+        ["Jorgee","Jorgee",3]
+]
